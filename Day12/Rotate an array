@@ -1,0 +1,24 @@
+//https://www.geeksforgeeks.org/problems/reversal-algorithm5340/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=reversal-algorithm
+
+
+class Solution {
+    void leftRotate(int[] arr, int n, int d) {
+        
+        int[] arr2 = new int[n];
+        
+        for(int i = 0; i < n; i++){
+            
+            arr2[i] = arr[(i + d)%n];
+            
+            
+        }
+        
+        int counter = 0;
+        for(int x : arr2){
+            
+            arr[counter++] = x;
+            
+        }
+        
+    }
+}
